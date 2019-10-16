@@ -1,0 +1,31 @@
+.trends {
+  padding: 200px 0;
+  background: $color-gray-light;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__item {
+    text-align: center;
+  }
+
+  &__image {
+    max-width: 120px;
+    max-height: 105px;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}

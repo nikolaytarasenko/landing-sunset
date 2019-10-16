@@ -1,0 +1,40 @@
+.things {
+  padding: 200px 0;
+
+  &__title {
+    @include section-title;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-black;
+    transform: rotate(-45deg);
+    width: 224px;
+    height: 224px;
+    transition: 0.2s ease-out;
+
+    &:hover {
+      transform: rotate(0);
+      background: $color-main;
+
+      .things__icon {
+        transform: rotate(10deg);
+        fill: $color-white;
+      }
+    }
+  }
+
+  &__icon {
+    transform: rotate(45deg);
+    max-width: 100px;
+    transition: 0.2s ease-out;
+  }
+}

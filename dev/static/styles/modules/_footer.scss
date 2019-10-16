@@ -1,0 +1,21 @@
+.footer {
+  padding: 75px 0 30px;
+  text-align: center;
+
+  .social {
+    justify-content: center;
+
+    &__item {
+      border: 1px solid $color-black;
+
+      .social__icon {
+        fill: $color-black;
+      }
+    }
+  }
+  
+  &__copy {
+    margin-top: 4rem;
+    text-transform: uppercase;
+  }
+}
