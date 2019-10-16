@@ -1,0 +1,23 @@
+-
+    var works = [{'name': 'MOUNTAINS + SUNSET', 'description': 'Landscape photography', 'image': 'work-1.png'},
+        {'name': 'GOTHIC MOUNTAINS #1', 'description': 'Nature photography', 'image': 'work-2.png'},
+        {'name': 'GOTHIC MOUNTAINS #1', 'description': 'Landscape photography', 'image': 'work-3.png'},
+        {'name': 'BACON IPSUM DOLOR', 'description': 'Landscape photography', 'image': 'work-4.png'},
+        {'name': 'BACON IPSUM DOLOR', 'description': 'Nature photography', 'image': 'work-5.png'},
+        {'name': 'BACON IPSUM DOLOR', 'description': 'Nature photography', 'image': 'work-6.png'}]
+
+section.works
+    h2.works__title selected work
+    .works__list
+        each work, index in works
+            .works__item.work
+                .work__header
+                    img.work__img(src="static/images/content/works/"+work.image)
+                    a.work__button.button(href="#") case study
+                        span.button__arrow-right &rarr;
+                .work__info
+                    .work__title=work.name
+                    .work__description=work.description
+    .works__more
+        a.works__button.button(href="#") all projects
+            span.button__arrow-right &rarr;

@@ -1,0 +1,28 @@
+$color-image-border: #e7e7e7;
+
+.about {
+  padding: 200px 0;
+  background: $color-gray-light;
+
+  &__info {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  &__title {
+    @include section-title;
+  }
+
+  &__image {
+    border-radius: 50%;
+    border: 5px solid $color-image-border;
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}

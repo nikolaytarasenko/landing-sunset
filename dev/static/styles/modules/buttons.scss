@@ -1,0 +1,22 @@
+.button {
+  transition: 0.2s linear;
+  color: $color-white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem;
+
+  &__arrow-right {
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    transition: margin-left 0.1s linear;
+  }
+
+  &:hover {
+    color: $color-black;
+    background: $color-white;
+
+    .button__arrow-right {
+      margin-left: 1rem;
+    }
+  }
+}
