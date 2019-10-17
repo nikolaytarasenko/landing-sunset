@@ -5,10 +5,20 @@
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   
   &__item {
     text-align: center;
+
+    @media (max-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   &__image {
@@ -21,6 +31,10 @@
     font-size: 1.875rem;
     font-weight: 300;
     margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__description {

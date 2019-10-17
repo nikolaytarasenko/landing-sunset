@@ -30,12 +30,21 @@
     font-size: 3.75rem;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
   }
 
   &__description {
     color: rgba($color-white, 0.3);
     font-size: 1.625rem;
     font-weight: 300;
+
+    @media (max-width: 576px) {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
   }
 }
 

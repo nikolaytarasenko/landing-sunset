@@ -5,10 +5,28 @@
   width: 100%;
   z-index: 2;
 
+  @media (max-width: 768px) {
+    top: 40px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__social {
+    margin-left: 15px;
+  }
+
+  &__nav {
+    @media (max-width: 768px) {
+      margin-top: 3rem;
+    }
   }
 }
 
@@ -21,6 +39,10 @@
 
     &:not(:last-child) {
       margin-right: 60px;
+
+      @media (max-width: 576px) {
+        margin-right: 20px;
+      }
     }
   }
 }

@@ -13,6 +13,18 @@ $color-bg: #222222;
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+      justify-items: center;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+    }
   }
 
   &__item {
