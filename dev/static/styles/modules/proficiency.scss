@@ -1,7 +1,7 @@
 $color-bg: #222222;
 
 .proficiency {
-  padding: 100px 0;
+  padding: 200px 0;
   background: $color-bg;
   color: $color-white;
 
@@ -29,6 +29,12 @@ $color-bg: #222222;
 
   &__item {
     max-width: 170px;
+
+    &:hover {
+      .proficiency__name {
+        transform: translateY(-5px);
+      }
+    }
   }
 
   &__chart {
@@ -65,6 +71,7 @@ $color-bg: #222222;
     margin-top: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
+    transition: 0.1s ease-out;
   }
 }
 

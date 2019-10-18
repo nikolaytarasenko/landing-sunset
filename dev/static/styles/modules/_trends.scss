@@ -13,6 +13,15 @@
   
   &__item {
     text-align: center;
+    transition: 0.2s ease;
+
+    &:hover {
+      transform: translateY(-20px);
+
+      .trends__image {
+        transform: scale(1.1);
+      }
+    }
 
     @media (max-width: 768px) {
       &:not(:last-child) {
@@ -25,6 +34,7 @@
     max-width: 120px;
     max-height: 105px;
     margin-bottom: 2rem;
+    transition: 0.2s ease;
   }
 
   &__title {

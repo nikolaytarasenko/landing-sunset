@@ -8,6 +8,12 @@
     &__item {
       border: 1px solid $color-black;
 
+      &:hover {
+        .social__icon {
+          fill: $color-white;
+        }
+      }
+
       .social__icon {
         fill: $color-black;
       }

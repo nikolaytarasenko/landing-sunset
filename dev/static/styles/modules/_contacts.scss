@@ -1,6 +1,6 @@
 .contacts {
   padding: 200px 0;
-  background: url("../images/content/contacts/contacts-bg.jpg") center no-repeat;
+  background: url("../images/content/contacts/contacts-bg.jpg") fixed center no-repeat;
   background-size: cover;
 
   &__title {
@@ -63,6 +63,12 @@
     display: flex;
     align-items: center;
 
+    &:hover {
+      .contacts__icon {
+        transform: translateX(10px);
+      }
+    }
+
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
@@ -72,6 +78,7 @@
     height: 20px;
     width: 20px;
     margin-right: 2rem;
+    transition: 0.2s ease-out;
 
     @media (max-width: 576px) {
       margin-right: 1rem;

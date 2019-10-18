@@ -36,6 +36,8 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 0.85rem;
+    transition: 0.2s ease-out;
+    position: relative;
 
     &:not(:last-child) {
       margin-right: 60px;
@@ -43,6 +45,26 @@
       @media (max-width: 576px) {
         margin-right: 20px;
       }
+    }
+
+    &:hover {
+      opacity: 0.9;
+
+      &::before {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background: $color-white;
+      transition: 0.2s ease-out;
     }
   }
 }
@@ -58,9 +80,18 @@
     transform: rotate(-45deg) scale(1.42);
     width: 34px;
     height: 34px;
+    transition: 0.1s ease-out;
 
     &:not(:last-child) {
       margin-right: 32px;
+    }
+
+    &:hover {
+      background: $color-black;
+      transform: rotate(-45deg) scale(1.5);
+      //.social__icon {
+      //  fill: $color-white;
+      //}
     }
   }
 

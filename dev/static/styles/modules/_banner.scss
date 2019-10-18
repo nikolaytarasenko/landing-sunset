@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("../images/content/banner/banner-bg.png") center no-repeat;
+  background: url("../images/content/banner/banner-bg.png") fixed center no-repeat;
   background-size: cover;
   z-index: 1;
 
@@ -56,9 +56,18 @@
   cursor: pointer;
   text-align: center;
 
+  &:hover {
+    .scroll__mouse {
+      width: 26px;
+      height: 50px;
+      transform: scale(1.2);
+    }
+  }
+
   &__mouse {
     width: 26px;
     height: 50px;
+    transition: 0.2s ease-out;
   }
 
   &__text {
